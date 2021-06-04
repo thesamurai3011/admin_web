@@ -1,0 +1,42 @@
+body {
+    background-image: url("../img/background.jpg");
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.main{
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.main h3{
+    text-align: center;
+}
+table, thead, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr, td{
+    width: 30%;
+    text-align: center;
+}
+
+#returnBtn{
+    background: #5d8ffc;
+    color: #fff;
+    border: 1px solid #5d8ffc;
+    border-radius: 5px;
+    padding: 15px 15px;
+    display: block;
+    width: 20%;
+    transition: 0.3s;
+    margin-bottom: 8px;
+    float: right;
+}

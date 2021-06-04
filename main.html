@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/login.css" />
+  
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome Admin</h3>
+    <button onclick="addUser()">Add User</button>
+    <button onclick="checkResponse()">Response</button>
+    <button onclick="logout()">Logout</button>
+    
+
+  </div>
+  
+  <!-- js -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+  <script src="./js/fireBase.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
