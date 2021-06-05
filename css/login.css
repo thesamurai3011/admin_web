@@ -59,4 +59,6 @@ input, button {
   cursor: pointer;
 }
 
-
+#user_div > h3 {
+  text-align: center;
+}
