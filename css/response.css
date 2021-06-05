@@ -39,4 +39,12 @@ tr, td{
     transition: 0.3s;
     margin-bottom: 8px;
     float: right;
+    cursor: pointer;
+}
+
+#returnBtn:hover{
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
 }
