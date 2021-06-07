@@ -11,7 +11,7 @@ function add(){
     var ref = firebase.database().ref().child("User");
     ref.orderByChild("email").equalTo(text1.value).once("value", snapshot => {
         if(snapshot.exists()){
-            alert("exists email");
+            alert("Exist email!!!");
         }
         else{
             var newUser = ref.push();

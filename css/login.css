@@ -62,3 +62,7 @@ input, button {
 #user_div > h3 {
   text-align: center;
 }
+
+.main-div h3 {
+    text-align: center;
+}
