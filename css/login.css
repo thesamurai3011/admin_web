@@ -59,10 +59,10 @@ input, button {
   cursor: pointer;
 }
 
-#user_div > h3 {
+#user_div .intro2 {
   text-align: center;
 }
 
-.main-div h3 {
-    text-align: center;
+.main-div .intro1 {
+  text-align: center;
 }
