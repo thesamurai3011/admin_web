@@ -37,6 +37,13 @@ input, button {
   border: 1px solid #777;
 }
 
+.main-div .intro1 {
+  text-align: center;
+}
+
+#user_div .intro2 {
+  text-align: center;
+}
 
 .main-div button, .loggedin-div button {
   background: #5d8ffc;
@@ -59,10 +66,3 @@ input, button {
   cursor: pointer;
 }
 
-#user_div .intro2 {
-  text-align: center;
-}
-
-.main-div .intro1 {
-  text-align: center;
-}
