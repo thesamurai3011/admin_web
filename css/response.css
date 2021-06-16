@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/background.jpg");
+    /* background-image: url("../img/background.jpg"); */
     padding: 0px;
     margin: 0px;
     font-family: 'Nunito', sans-serif;
@@ -28,7 +28,7 @@ tr, td{
     text-align: center;
 }
 
-#returnBtn{
+#returnBtn1, #returnBtn2, #returnBtn3{
     background: #5d8ffc;
     color: #fff;
     border: 1px solid #5d8ffc;
@@ -42,7 +42,7 @@ tr, td{
     cursor: pointer;
 }
 
-#returnBtn:hover{
+#returnBtn1:hover, #returnBtn2:hover, #returnBtn3:hover{
     background: #fff;
     color: #5d8ffc;
     border: 1px solid #5d8ffc;

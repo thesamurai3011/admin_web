@@ -5,30 +5,112 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/response.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
 </head>
 <body>
-
-    <div class="main">
-        <h3>All Responses</h3>
-        <table class="table table-bordered table-success table-hover">
-            <thead class="bg-success">
-                <tr>
-                    <td>Email</td>
-                    <td>Score</td>
-                    <td>Text</td>  
-                </tr>
-            </thead>
-            <tbody id="table_body">
-            </tbody>
-        </table>
-        <button id="returnBtn">Return</button>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#app">App</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#maintain">Maintain</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#product">Product</a>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Table 1 -->
+        <div class="tab-pane container active" id="app">
+            <div class="container">
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="container pt-5">
+                <table class="table table-bordered table-success table-hover">
+                    <thead class="bg-success">
+                        <tr>
+                            <td>Email</td>
+                            <td>Score</td>
+                            <td>Text</td>  
+                        </tr>
+                    </thead>
+                    <tbody id="table_body1">
+                    </tbody>
+                </table>
+                <button id="returnBtn1">Return</button>
+            </div>
+        </div>
+        
+        <!-- Table 2 -->
+        <div class="tab-pane container fade" id="maintain">
+            <div class="container">
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="container pt-5">
+                <table class="table table-bordered table-success table-hover">
+                    <thead class="bg-success">
+                        <tr>
+                            <td>Email</td>
+                            <td>Score</td>
+                            <td>Text</td>  
+                        </tr>
+                    </thead>
+                    <tbody id="table_body2">
+                    </tbody>
+                </table>
+                <button id="returnBtn2">Return</button>
+            </div>
+        </div>
+        
+        <!-- Table 3 -->
+        <div class="tab-pane container fade" id="product">
+            <div class="container">
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="container pt-5">
+                <table class="table table-bordered table-success table-hover">
+                    <thead class="bg-success">
+                        <tr>
+                            <td>Email</td>
+                            <td>Score</td>
+                            <td>Text</td>  
+                        </tr>
+                    </thead>
+                    <tbody id="table_body3">
+                    </tbody>
+                </table>
+                <button id="returnBtn3">Return</button>
+            </div>
+        </div>
     </div>
+
+    
+
+
+
     
     
 
-    
+
+
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
@@ -50,14 +132,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
       </script>
-
-
-
-
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/response.js"></script>
 </body>
 </html>
