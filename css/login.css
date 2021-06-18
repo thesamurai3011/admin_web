@@ -1,5 +1,6 @@
 body {
-  background-image: url("../img/background.jpg");
+  background-color: #4ca1af;
+  background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
   padding: 0px;
   margin: 0px;
   font-family: 'Nunito', sans-serif;

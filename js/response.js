@@ -67,8 +67,8 @@ function fetchData(){
                 'rgba(255, 206, 86, 0.6)',
                 'rgba(75, 192, 192, 0.6)',
                 'rgba(153, 102, 255, 0.6)',
-                // 'rgba(255, 159, 64, 0.6)',
-                // 'rgba(255, 99, 132, 0.6)'
+                'rgba(255, 159, 64, 0.6)',
+                'rgba(255, 99, 132, 0.6)'
                 ],
                 borderWidth:1,
                 borderColor:'#777',
@@ -87,6 +87,11 @@ function fetchData(){
                     position:'right',
                     labels:{
                     fontColor:'#000'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 },
                 layout:{
@@ -138,7 +143,7 @@ function fetchData(){
         Chart.defaults.global.defaultFontColor = '#777';
         
         let massPopChart = new Chart(myChart, {
-            type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data:{
             labels:['1 Star', '2 Star', '3 Star', '4 Star', '5 Star'],
             datasets:[{
@@ -177,6 +182,11 @@ function fetchData(){
                     position:'right',
                     labels:{
                     fontColor:'#000'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 },
                 layout:{
@@ -228,7 +238,7 @@ function fetchData(){
         Chart.defaults.global.defaultFontColor = '#777';
         
         let massPopChart = new Chart(myChart, {
-            type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data:{
             labels:['1 Star', '2 Star', '3 Star', '4 Star', '5 Star'],
             datasets:[{
@@ -267,6 +277,11 @@ function fetchData(){
                     position:'right',
                     labels:{
                     fontColor:'#000'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 },
                 layout:{
