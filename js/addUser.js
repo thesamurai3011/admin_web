@@ -225,8 +225,19 @@ var md5 = function (string) {
     return temp.toLowerCase();
 }
 
+function checkExist(){
+    var ref1 = firebase.database().ref();
+    var a;
+    ref1.once("value", function (snapshot) {
+        a = snapshot.child("Component").exists();
+        return a;
+    });
+}
+
+
+
 function add(){
-    var ref = firebase.database().ref().child("User");
+    var ref = firebase.database().ref("User");
     ref.orderByChild("email").equalTo(text1.value).once("value", snapshot => {
         if(text1.value == "" || text6.value == "" || text3.value == "" || text4.value == "" || text5.value == ""){
             //out
@@ -258,13 +269,19 @@ function add(){
                             var errorMessage = error.message;
                             // ..
                         });
-
-
+                // // Kiểm tra tồn tại hay không
+                // if(checkExist){
+                //     console.log("Tồn tại nút component");
+                // }
+                // else{
+                //     console.log("Không tồn tại");
+                // }
+                // Thêm component
                 component = newUser.key;
-                var test = firebase.database().ref('Component');
+                var test = firebase.database().ref('User');
                 var count;
                 test.once("value", function (snapshot) {
-                    count = snapshot.numChildren() + 1;
+                    count = snapshot.numChildren();
                     console.log("giá trị của count: " + count);
 
                     //Thêm component
@@ -300,7 +317,8 @@ function add(){
                     });
                 });
                 alert("Add User: " + text1.value);
-                // location.reload();
+                location.reload();
+                count = 0;
             }
         }
     });
