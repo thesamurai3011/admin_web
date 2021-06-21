@@ -48,7 +48,7 @@ function fetchData(){
         Chart.defaults.global.defaultFontColor = '#777';
         
         let massPopChart = new Chart(myChart, {
-            type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data:{
             labels:['1 Star', '2 Star', '3 Star', '4 Star', '5 Star'],
             datasets:[{
@@ -143,7 +143,7 @@ function fetchData(){
         Chart.defaults.global.defaultFontColor = '#777';
         
         let massPopChart = new Chart(myChart, {
-            type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data:{
             labels:['1 Star', '2 Star', '3 Star', '4 Star', '5 Star'],
             datasets:[{
@@ -238,7 +238,7 @@ function fetchData(){
         Chart.defaults.global.defaultFontColor = '#777';
         
         let massPopChart = new Chart(myChart, {
-            type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
             data:{
             labels:['1 Star', '2 Star', '3 Star', '4 Star', '5 Star'],
             datasets:[{
